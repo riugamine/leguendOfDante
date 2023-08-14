@@ -13,7 +13,13 @@ export default function Heroes() {
     setSelectedItem(item);
   };
   const [hero1, setHero] = useState({
-    image: 'https://us.123rf.com/450wm/starush/starush2306/starush230603497/206527426-a-cartoon-viking-with-a-beard-and-a-helmet-generative-ai-image.jpg?ver=6'
+    id: 123,
+    price: 145124,
+    image: 'https://us.123rf.com/450wm/starush/starush2306/starush230603497/206527426-a-cartoon-viking-with-a-beard-and-a-helmet-generative-ai-image.jpg?ver=6',
+    mainSkill: 'Supremacy',
+    mainSkillDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae tincidunt mauris. Nulla vel maximus sapien, et lobortis enim. Pellentesque ut erat sed leo auctor pretium.',
+    secondarySkill: 'Companion',
+    secondarySkillDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae tincidunt mauris. Nulla vel maximus sapien, et lobortis enim. Pellentesque ut erat sed leo auctor pretium.',
   })
 
   const HeroCard = (hero) => {
@@ -21,15 +27,15 @@ export default function Heroes() {
       <div className={`${styles.heroCard} col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6`}>
         <div className={styles.price}>
           <span className={styles.moneyBag}>💰</span>
-          <span className={styles.priceNumber}>500000</span>
+          <span className={styles.priceNumber}>{hero.hero.price}</span>
           <span className={styles.cart}>🛒</span>
-          <span className={styles.cartNumber}>5</span>
+          <span className={styles.cartNumber}>{hero.hero.id}</span>
         </div>
-        <div className={styles.heroContainer} style={{ backgroundImage: `url(${hero1.image})` }}>
+        <div className={styles.heroContainer} style={{ backgroundImage: `url(${hero.hero.image})` }}>
           <div className={styles.heroImage}></div>
           <div className={styles.darkCircles}>
-            <Tooltip title='titulo del skill 1' description='parrafo con la descripcion de la skill en detalle. 1' type={styles.darkCircle1} ></Tooltip>
-            <Tooltip title='titulo del skill 2' description='parrafo con la descripcion de la skill en detalle. 2' type={styles.darkCircle2} ></Tooltip>
+            <Tooltip title={hero.hero.mainSkill} description={hero.hero.mainSkillDescription} type={styles.darkCircle1} ></Tooltip>
+            <Tooltip title={hero.hero.secondarySkill} description={hero.hero.secondarySkillDescription} type={styles.darkCircle2} ></Tooltip>
 
           </div>
           <div className={`${styles.overlayCircle}`}></div>

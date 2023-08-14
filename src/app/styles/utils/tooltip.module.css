@@ -13,7 +13,7 @@
     position: absolute;
     /* this is used to place the tooltip bubble above the button, edit to value that fits you*/
     /* also you can change top to bottom, right or left for different tooltip location */
-    top:-400%; 
+    top:-700%; 
     left: -100%;
     visibility: hidden;
     width: 250px;
