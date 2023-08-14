@@ -1,0 +1,187 @@
+.sidebar {
+    /* position: sticky;
+    left: 0;
+    top: 200;
+    height: 100%;
+    width: 300px; 
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px; */
+    /* width: 300px;  Ajusta el ancho según tus necesidades */
+    background-color: white;
+    padding:  20px 0px 20px 40px;
+    border-radius: 10px;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  }
+
+  /* Nuevos estilos para el sidebar de Filtros */
+  .filterContainer {
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 10px;
+    padding:  10px 1px 10px 0px;
+    margin-bottom: 20px;
+  }
+  
+  .filterTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  .filterTitle h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  /* Esto es el css para los tipos de rareza */
+  .filterRarityContainer {
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px 20px 0px;
+    margin-bottom: 20px;
+  }
+  
+  .filterRarityTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .filterRarityTitle h2 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .selectedRarity {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .rarityOptions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+
+  }
+  
+  .rarityCircle {
+    cursor:pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
+  /* Esto es el css para la seleccion de tipos de heroes */
+  .filterHeroesTypeContainer {
+
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px 10px 10px 0px;
+    padding-bottom: 50px;  /* esto es solamente para el demo de la pagina luego eliminar */
+    margin-bottom: 20px;
+  }
+  .selectedHeroTypes {
+    background-color: lightgrey;
+    border: 1px solid darkgoldenrod;
+    border-radius: 50%;
+    padding: 0px 7px;
+  }
+  
+  .heroTypeOptions {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .heroType {
+    background-color: lightgrey;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
+  }
+  
+  .heroType.selected {
+    background-color: gray;
+    color: white;
+  }
+
+  /* Aqui esta el css para el filtro de buscar por habilidades */
+
+  .abilityFilter {
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 10px;
+  }
+  
+  .abilityFilter input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .searchIcon {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  /* Aqui esta el css para el filtro de Elements */
+
+
+  .filterElementsContainer {
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .elementFilter {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px 5px 5px 0px;
+    margin-top: 10px;
+  }
+  
+  .elementFilter h2 {
+    margin: 0;
+  }
+  
+  .elementFilter input {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-radius: 5px;
+
+    margin: 0 5px;
+  }
+  
+  .rangeText {
+    margin: 0 5px;
+  }
+  .size{
+    width: 20px;
+  }

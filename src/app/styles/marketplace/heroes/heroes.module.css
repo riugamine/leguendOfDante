@@ -1,0 +1,113 @@
+/* Estilos para el componente HeroCard */
+.heroCard {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+
+  }
+  
+  .price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: lightgrey;
+    width: 260px;
+    border-radius: 10px;
+  }
+  
+  .moneyBag, .cart {
+    font-size: 20px;
+    margin-right: 5px;
+    margin-left: 10px;
+  }
+  
+  .priceNumber, .cartNumber {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .heroContainer {
+    position: relative;
+    width: 260px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 20px;
+  }
+  
+  .darkCircles {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    margin-left: 15px;
+  }
+  
+  .darkCircle1 {
+    width: 40px;
+    height: 40px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  .darkCircle2 {
+    width: 35px;
+    height: 35px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .overlayCircle {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+  
+  /* Estilos Responsive */
+  @media (max-width: 768px) {
+    .heroCard {
+      padding: 10px;
+    }
+  
+    .heroContainer {
+      width: 70px;
+      height: 105px;
+    }
+  
+    .overlayCircle {
+      width: 20px;
+      height: 20px;
+      border-width: 1px;
+      bottom: -5px;
+      right: -5px;
+    }
+  }
+/* Estilos para el componente HeroCard */
+
+/* .mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    padding: 20px;
+
+} */
+.heroCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left:20px ;
+}
+
+
+
+
+
+
+

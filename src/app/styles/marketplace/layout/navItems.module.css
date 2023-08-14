@@ -1,0 +1,91 @@
+.navbarI {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navLinksI {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    font-size: 22px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 20px;
+  }
+
+.navLinkI {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 5px 8px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, border 0.3s;
+  }
+
+.navLinkI:hover {
+    background-color: lightgrey;
+    color: black;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid yellow;
+    padding: 5px 8px;
+  }
+
+.activeI {
+    background-color: lightgrey;
+    color: black;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 1px yellow;
+    border-radius: 10px;
+    border: 1px solid yellow;
+  }
+
+.iconI {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+
+.optionsBoxI {
+    background-color: lightgrey;
+    padding: 0px;
+    text-align: center;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin-left: 20px !important;
+    display: flex;
+    font-size: 14px;
+    gap: 0px;
+    justify-content: center;
+}
+.infoText {
+    flex-wrap: wrap;
+    display: flex;
+    align-content: center;
+    padding: 8px 8px;
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    .navbarI {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .navLinksI {
+      margin-top: 10px;
+    }
+
+    .optionsBoxI {
+      margin-top: 10px;
+    }
+  }

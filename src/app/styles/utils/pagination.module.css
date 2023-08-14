@@ -1,0 +1,33 @@
+/* Pagination.module.css */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0px;
+    gap: 15px;
+  }
+
+.pageSymbol {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 50%;
+    font-weight: bold;
+}
+.pageNumber,
+.pageText,
+.totalPages{
+    background-color: white;
+    font-weight: bold;
+    
+}
+.pageNumber.active {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
