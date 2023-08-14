@@ -1,6 +1,6 @@
 .navbar {
     background-color: lightgrey;
-    height: 60px;
+    min-height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,16 +38,36 @@
     padding-right: 2px;
     border-bottom: 1px solid yellow;
   }
-
-  @media (max-width: 768px) {
+  @media (min-width: 768px) and (max-width:1023px){
     .navbar {
       height: auto;
       padding: 10px 0;
+      text-align: center;
     }
 
     .navLinks {
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
+      padding-left: 0;
+      margin-bottom: 20px;
+    }
+
+    .navLink {
+      padding: 5px 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      height: auto;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .navLinks {
+      flex-direction: column;
+      gap: 20px;
+      padding-left: 0;
+      margin-bottom: 20px;
     }
 
     .navLink {
