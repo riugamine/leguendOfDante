@@ -13,7 +13,7 @@ export default function footer() {
       <li><a className={styles.socialLink} href="#"><Image className={styles.socialIcon} src="/img/internet-icon.png" width={40} height={40} alt='league-of-dante'></Image></a></li>
     </ul>
 
-    <p classnName={styles.lenguage}> <button className=' btn btn-text' type='button'>English</button> | <button className=' btn btn-text' type='button'>Español</button></p>
+    <p className={styles.lenguage}> <button className=' btn btn-text' type='button'>English</button> | <button className=' btn btn-text' type='button'>Español</button></p>
   </footer>
   )
 }

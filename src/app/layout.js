@@ -7,10 +7,6 @@ import Footer from './components/layout/footer'
 import { useEffect } from 'react'
 const mont = Montserrat({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'League Of Dante',
-  description: 'Tienda de nfts',
-}
 
 export default function RootLayout({ children }) {
   useEffect(() => {
