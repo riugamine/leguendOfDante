@@ -18,10 +18,10 @@ export default function Heroes() {
 
   const HeroCard = (hero) => {
     return (
-      <div className={`${styles.heroCard} col-12 col-xl-3 col-lg-3 col-md-3 col-sm-6`}>
+      <div className={`${styles.heroCard} col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6`}>
         <div className={styles.price}>
           <span className={styles.moneyBag}>💰</span>
-          <span className={styles.priceNumber}>500000000</span>
+          <span className={styles.priceNumber}>500000</span>
           <span className={styles.cart}>🛒</span>
           <span className={styles.cartNumber}>5</span>
         </div>
@@ -42,9 +42,9 @@ export default function Heroes() {
   return (
     <div className={`${styles.pageContainer} row g-0`}>
       <Sidebar></Sidebar>
-      <div className={`col-12 col-xl-9 col-lg-9 col-md-9 col-sm-12`}>
+      <div className={`col-12 col-xl-9 col-lg-9 col-md-12 col-sm-12`}>
         <div className={`${styles.heroCardContainer} row g-0`}>
-          <div className="dropdown col-12" style={{paddingLeft: 20 + 'px'}}>
+          <div className={`${styles.paddingXl} dropdown col-12`}>
             <button
               className="btn btn-light dropdown-toggle"
               type="button"

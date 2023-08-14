@@ -11,7 +11,7 @@
     align-items: center;
     margin-bottom: 10px;
     background-color: lightgrey;
-    width: 260px;
+    width: 220px;
     border-radius: 10px;
   }
   
@@ -28,8 +28,8 @@
   
   .heroContainer {
     position: relative;
-    width: 260px;
-    height: 350px;
+    width: 220px;
+    height: 280px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -63,30 +63,85 @@
     position: absolute;
     bottom: -10px;
     right: -10px;
-    width: 60px;
-    height: 60px;
-    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    background-color: black;
     border: 2px solid white;
     border-radius: 50%;
   }
-  
+  .paddingXl{
+    padding-left: 20px;
+  }
+  .heroCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left:20px ;
+}
   /* Estilos Responsive */
   @media (max-width: 768px) {
     .heroCard {
-      padding: 10px;
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-  
+    .price {
+      width: 220px;
+    }
     .heroContainer {
-      width: 70px;
-      height: 105px;
+      width: 220px;
+      height: 280px;
+      margin-bottom: 20px;
     }
-  
+    .paddingXl{
+      padding-left: 0px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
     .overlayCircle {
-      width: 20px;
-      height: 20px;
+      width: 60px;
+      height: 60px;
       border-width: 1px;
-      bottom: -5px;
-      right: -5px;
+      bottom: -10px;
+      right: -10px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .heroCard {
+      padding: 0px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .price {
+      width: 220px;
+    }
+    .heroContainer {
+      width: 220px;
+      height: 320px;
+      margin-bottom: 20px;
+    }
+    .paddingXl{
+      padding-left: 0px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .heroCardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+      margin-left:10px ;
+      margin-right: 10px;
+    }
+    .overlayCircle {
+      width: 60px;
+      height: 60px;
+      border-width: 1px;
+      bottom: -10px;
+      right: -10px;
     }
   }
 /* Estilos para el componente HeroCard */
@@ -98,12 +153,7 @@
     padding: 20px;
 
 } */
-.heroCardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    margin-left:20px ;
-}
+
 
 
 
